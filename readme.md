@@ -4,8 +4,19 @@ Congratulations! Your design of the TIY Sports homepage was a huge success and y
 
 ## Setup
 
-createdb tiy-sports
-uudecode -o /dev/stdout < tiy-sports.dmp | psql tiy-sports
+- Fork [this repo](https://github.com/tiy-tpa-ruby/tiy-sports-with-sinatra-bootstrap-pg)
+- Setup your environment:
+  ```sh
+  take ~/tiy/week-4/day-3
+  hub clone tiy-sports-with-sinatra-bootstrap-pg
+  cd tiy-sports-with-sinatra-bootstrap-pg
+  ```
+
+- Setup the database:
+  ```sh
+  createdb tiy-sports
+  uudecode -o /dev/stdout < tiy-sports.dmp | psql tiy-sports
+  ```
 
 ### Tables that exist
 
@@ -31,4 +42,3 @@ create table memberships(id serial, team_id integer, player_id integer);
 
 - Turn the pagination of teams into dynamically generated page identifiers and make the pagination work.
 - Use 5 as the number of teams per `page` and insert many more teams into the system.
-
