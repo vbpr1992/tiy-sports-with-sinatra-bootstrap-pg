@@ -1,4 +1,4 @@
 class Team < ActiveRecord::Base
   has_many :memberships
-  has_many :platers, through: :memberships
+  has_many :players, through: :memberships
 end
