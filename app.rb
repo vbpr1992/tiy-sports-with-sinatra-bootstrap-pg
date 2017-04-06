@@ -11,6 +11,7 @@ ActiveRecord::Base.establish_connection(
 require_relative 'player'
 require_relative 'team'
 require_relative 'membership'
+
 after do
   ActiveRecord::Base.connection.close
 end
